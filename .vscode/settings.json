@@ -1,0 +1,19 @@
+{
+    "cSpell.words": [
+        "alamat",
+        "amqp",
+        "bergabung",
+        "customerproducer",
+        "gorm",
+        "lahir",
+        "Lengkap",
+        "milli",
+        "MQURL",
+        "prefork",
+        "rabbitmq",
+        "tanggal",
+        "telepon",
+        "usecase"
+    ],
+    "go.formatTool": "default"
+}

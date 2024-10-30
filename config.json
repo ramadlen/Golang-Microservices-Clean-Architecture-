@@ -1,0 +1,43 @@
+{
+  "app": {
+    "name": "customers-clean-architecture"
+  },
+  "web": {
+    "prefork": false,
+    "port": 8000
+  },
+  "log": {
+    "level": 6  
+  },
+  "database": {
+    "username": "root",
+    "password": "",  
+    "host": "localhost",
+    "port": 3306,
+    "name": "customers_clean_architecture",
+    "pool": {
+      "idle": 10,     
+      "max": 100,     
+      "lifetime": 300 
+    }
+  },
+  
+  "rabbitmq": {
+    "bootstrap": {
+     "servers": "amqp://guest:guest@localhost:5672/",
+      "vhost": "/",  
+      "timeout": 30  
+    },
+    "queue": {
+      "tag": "customers-clean-architecture",
+      "durable": true,  
+      "auto_delete": false 
+    },
+    "exchange": {
+      "name": "customers_exchange",
+      "type": "topic",
+      "durable": true  
+    }
+  }
+}
+
